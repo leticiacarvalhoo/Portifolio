@@ -1,0 +1,128 @@
+*{
+    font-family: "Roboto", sans-serif;
+}
+
+
+/* Navbar */
+nav {
+    background-color: #050A30; 
+    padding: 1% 10px; 
+    margin-bottom: -6%;
+    display: flex;
+    justify-content: center; 
+}
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px; 
+    font-size: 17px; 
+    font-weight: 400;
+    transition: color 0.3s ease; 
+}
+.navbar a:hover {
+    color: #B79347; 
+    font-weight: 500; 
+}
+@media (max-width: 768px) {
+    nav {
+        padding: 15px 5%; 
+    }
+    .navbar {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+    }
+    .navbar a {
+        margin: 10px 0; 
+    }
+}
+
+
+/* Banner */
+.banner-home {
+    color: #fff;
+    background-color: #050A30;
+    padding: 8% 6%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 0 0 30px 30px;
+}
+.column{
+    width: 100%;
+    padding-top: 5%;
+}
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.hello{
+    font-size: 20px;
+    font-weight: 300;
+    padding-bottom: 1%;
+}
+.nome{
+    font-size: 35px;
+    font-weight: bold;
+}
+.curso{
+    font-size: 17px;
+    margin-top: -0.5%;
+    margin-bottom: 3%;
+}
+.descricao{
+    font-size: 17px;
+    padding-bottom: 1%;
+    padding-right: 7%;
+}
+.img {
+    max-width: 45%;
+    object-fit: cover;
+    margin-right: 10%;
+    margin-bottom: -9%;
+}
+.buttons {
+    display: flex;
+    gap: 15px; 
+    margin-top: 3%;
+}
+.see {
+    font-size: 17px;
+    color: #fff;
+    background-color: #B79347;
+    border-radius: 5px;
+    padding: 9px 12px;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+.see:hover {
+    background-color: #9b7d3c;
+}
+.contact {
+    font-size: 17px;
+    color: #fff;
+    background-color: #050A30;
+    border: 2px solid #B79347;
+    border-radius: 5px;
+    padding: 6px 10px;
+    transition: background-color 0.3s ease;
+}
+.contact:hover {
+    background-color: #9b7d3c;
+    border-color: #9b7d3c;
+}
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .column {
+        max-width: 100%; 
+    }
+    .img {
+        margin-top: 20px;
+        max-width: 50%; 
+    }
+}
